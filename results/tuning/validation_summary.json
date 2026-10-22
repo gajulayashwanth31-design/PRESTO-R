@@ -1,0 +1,28 @@
+{
+  "validation_seeds_only": true,
+  "runs": [
+    "runs\\reactive_dqn\\seed_0",
+    "runs\\reactive_dqn\\seed_1",
+    "runs\\reactive_dqn\\seed_2",
+    "runs\\reactive_dqn\\seed_3",
+    "runs\\reactive_dqn\\seed_4",
+    "runs\\predictive_dqn\\seed_0",
+    "runs\\predictive_dqn\\seed_1",
+    "runs\\predictive_dqn\\seed_2",
+    "runs\\predictive_dqn\\seed_3",
+    "runs\\predictive_dqn\\seed_4",
+    "runs\\presto_dqn\\seed_0",
+    "runs\\presto_dqn\\seed_1",
+    "runs\\presto_dqn\\seed_2",
+    "runs\\presto_dqn\\seed_3",
+    "runs\\presto_dqn\\seed_4",
+    "runs\\presto_oracle\\seed_0",
+    "runs\\presto_oracle\\seed_1"
+  ],
+  "scenarios": [
+    "congestion",
+    "node_failure",
+    "fluctuation",
+    "mixed"
+  ]
+}

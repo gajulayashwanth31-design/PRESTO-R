@@ -1,0 +1,3 @@
+condition,pdr_mean,switches_mean,proactive_rate_mean,recovery_time_mean,episodes
+normal,0.9843470940425307,16.666666666666668,0.5,9.5,3
+risk_permuted,0.9813349133309917,26.333333333333332,0.0,10.0,3

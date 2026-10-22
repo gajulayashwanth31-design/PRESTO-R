@@ -1,0 +1,139 @@
+methods:
+  sp_failover:
+    type: heuristic
+    cls: SPFailover
+  reactive_dqn:
+    type: sb3
+    run_glob_by_topology:
+      nsfnet: "runs/reactive_dqn/seed_{seed}"
+      rgg: "runs/reactive_dqn_rgg/seed_{seed}"
+  predictive_dqn:
+    type: sb3
+    run_glob_by_topology:
+      nsfnet: "runs/predictive_dqn/seed_{seed}"
+      rgg: "runs/predictive_dqn_rgg/seed_{seed}"
+  presto_dqn:
+    type: sb3
+    run_glob_by_topology:
+      nsfnet: "runs/presto_dqn/seed_{seed}"
+      rgg: "runs/presto_dqn_rgg/seed_{seed}"
+  presto_oracle:
+    type: sb3
+    topologies: [nsfnet]
+    training_seeds: [0, 1]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_oracle/seed_{seed}"
+  presto_lam0:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_lam0/seed_{seed}"
+  presto_lam005:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_lam0.05/seed_{seed}"
+  presto_lam01:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_lam0.1/seed_{seed}"
+  presto_lam025:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_lam0.25/seed_{seed}"
+  presto_lam05:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_lam0.5/seed_{seed}"
+  presto_h3:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed, node_failure]
+    training_seeds: [0, 1, 2]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_h3/seed_{seed}"
+  presto_h10:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed, node_failure]
+    training_seeds: [0, 1, 2]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_h10/seed_{seed}"
+  reactive_sudden:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1, 2, 3, 4]
+    run_glob_by_topology:
+      nsfnet: "runs/reactive_dqn/seed_{seed}"
+    evaluation_overrides:
+      scenario.no_precursor_prob: 1.0
+  presto_sudden:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1, 2, 3, 4]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_dqn/seed_{seed}"
+    evaluation_overrides:
+      scenario.no_precursor_prob: 1.0
+  reactive_noise2x:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1, 2, 3, 4]
+    run_glob_by_topology:
+      nsfnet: "runs/reactive_dqn/seed_{seed}"
+    evaluation_overrides:
+      measurement.delay_noise_rel: 0.1
+      measurement.loss_noise_abs: 0.01
+      measurement.queue_noise_rel: 0.1
+  presto_noise2x:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1, 2, 3, 4]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_dqn/seed_{seed}"
+    evaluation_overrides:
+      measurement.delay_noise_rel: 0.1
+      measurement.loss_noise_abs: 0.01
+      measurement.queue_noise_rel: 0.1
+  reactive_load150:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1, 2, 3, 4]
+    run_glob_by_topology:
+      nsfnet: "runs/reactive_dqn/seed_{seed}"
+    evaluation_overrides:
+      traffic.n_background: 30
+  presto_load150:
+    type: sb3
+    topologies: [nsfnet]
+    scenarios: [mixed]
+    training_seeds: [0, 1, 2, 3, 4]
+    run_glob_by_topology:
+      nsfnet: "runs/presto_dqn/seed_{seed}"
+    evaluation_overrides:
+      traffic.n_background: 30
+scenarios: [steady, congestion, node_failure, fluctuation, mixed]
+topologies: [nsfnet, rgg]
+training_seeds_by_topology:
+  nsfnet: [0, 1, 2, 3, 4]
+  rgg: [0, 1, 2]
+test_seeds: [10000, 10200]
+out_dir: results/raw

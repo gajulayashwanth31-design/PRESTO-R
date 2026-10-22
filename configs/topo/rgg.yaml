@@ -1,0 +1,7 @@
+topology:
+  name: rgg
+  n_nodes: 24
+  radius: 0.32
+  capacity: 10.0
+  delay_per_unit_dist_ms: 30
+  qmax: 20.0

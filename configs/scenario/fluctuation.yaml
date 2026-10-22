@@ -1,0 +1,8 @@
+defaults: [scenario/mixed.yaml]
+scenario:
+  name: fluctuation
+  events_per_episode:
+    congestion: 0
+    link_failure: 0
+    node_failure: 0
+    fluctuation: 1.5

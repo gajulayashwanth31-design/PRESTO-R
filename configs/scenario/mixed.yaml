@@ -1,0 +1,43 @@
+defaults: [base.yaml, topo/nsfnet.yaml]
+traffic:
+  n_background: 20
+  bg_rate_lognormal: [0.6, 0.5]
+  diurnal_amp: 0.3
+  diurnal_period: 100
+  noise_std: 0.05
+  managed_rate: 2.0
+link:
+  base_loss: 0.001
+  degr_loss: 0.15
+  timeout_ms: 200
+measurement:
+  delay_noise_rel: 0.05
+  loss_noise_abs: 0.005
+  queue_noise_rel: 0.05
+scenario:
+  name: mixed
+  events_per_episode:
+    congestion: 1.0
+    link_failure: 1.0
+    node_failure: 0.3
+    fluctuation: 0.5
+  target_on_candidate_prob: 0.7
+  precursor_len: [3, 10]
+  no_precursor_prob: 0.2
+  down_duration: [15, 60]
+  congestion_multiplier: [2.5, 4.0]
+  congestion_duration: [10, 40]
+  fluct_period: [6, 20]
+  fluct_depth: [0.3, 0.7]
+  h_min_precursor: 0.35
+paths:
+  k: 4
+agent:
+  use_risk: false
+reward:
+  alpha: 1.0
+  beta: 4.0
+  gamma: 0.0
+  lam: 0.1
+  mu: 0.05
+  switch_transient_loss: 0.0

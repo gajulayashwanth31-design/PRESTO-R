@@ -1,0 +1,23 @@
+defaults: [scenario/mixed.yaml]
+predictor:
+  type: gru
+  window: 10
+  horizon: 5
+  bad_loss: 0.05
+  bad_delay_factor: 3.0
+  data:
+    scenario_mix: [congestion, node_failure, fluctuation, mixed]
+    topologies: [nsfnet, rgg]
+    episodes_per_combo: 80
+    neg_subsample: 0.3
+    split_by_episode: [0.7, 0.15, 0.15]
+  model:
+    hidden: 32
+    layers: 1
+    dropout: 0.1
+  train:
+    lr: 0.001
+    batch: 512
+    epochs: 30
+    patience: 5
+    pos_weight: auto

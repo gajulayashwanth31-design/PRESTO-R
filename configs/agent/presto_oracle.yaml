@@ -1,0 +1,6 @@
+defaults: [agent/presto_dqn.yaml]
+agent:
+  name: presto_oracle
+  risk_model:
+    type: oracle
+    horizon: 5

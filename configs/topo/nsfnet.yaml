@@ -1,0 +1,5 @@
+topology:
+  name: nsfnet
+  capacity: 10.0
+  base_delay_ms: [2, 12]
+  qmax: 20.0

@@ -1,0 +1,6 @@
+defaults: [predictor/gru.yaml]
+predictor:
+  type: logreg
+  model:
+    C: 1.0
+    class_weight: balanced

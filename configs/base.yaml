@@ -1,0 +1,13 @@
+sim:
+  tick_ms: 100
+  episode_len: 200
+  warmup: 10
+seeds:
+  train_max: 5000
+  val: [5000, 5050]
+  test: [10000, 10200]
+paths:
+  data: data
+  models: models
+  runs: runs
+  results: results

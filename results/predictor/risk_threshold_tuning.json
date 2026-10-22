@@ -1,0 +1,10 @@
+{
+  "selected_tau": 0.5,
+  "selection_metric": "mean validation reward",
+  "scenario": "mixed",
+  "validation_seeds": [
+    5000,
+    5050
+  ],
+  "risk_model": "models\\predictor\\gru_W10_H5.pt"
+}

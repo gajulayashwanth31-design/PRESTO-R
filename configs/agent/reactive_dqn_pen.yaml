@@ -1,0 +1,5 @@
+defaults: [agent/reactive_dqn.yaml]
+agent:
+  name: reactive_dqn_pen
+reward:
+  lam: 0.5

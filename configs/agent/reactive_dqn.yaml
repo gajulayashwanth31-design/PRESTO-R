@@ -1,0 +1,29 @@
+defaults: [scenario/mixed.yaml]
+agent:
+  name: reactive_dqn
+  algo: dqn
+  use_risk: false
+  risk_model: null
+  total_steps: 300000
+  policy_kwargs:
+    net_arch: [128, 128]
+  dqn:
+    learning_rate: 0.0005
+    buffer_size: 100000
+    learning_starts: 5000
+    batch_size: 128
+    gamma: 0.97
+    train_freq: 4
+    target_update_interval: 2000
+    exploration_fraction: 0.2
+    exploration_final_eps: 0.02
+  train_scenarios: [congestion, node_failure, fluctuation, mixed]
+  eval_scenarios: [mixed]
+  eval_every: 10000
+  eval_episodes: 50
+reward:
+  alpha: 1.0
+  beta: 4.0
+  gamma: 0.0
+  lam: 0.0
+  mu: 0.05

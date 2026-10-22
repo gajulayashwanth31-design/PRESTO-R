@@ -1,0 +1,10 @@
+defaults: [agent/reactive_dqn.yaml]
+agent:
+  name: predictive_dqn
+  use_risk: true
+  risk_model:
+    type: gru
+    path: models/predictor/gru_W10_H5.pt
+  eval_scenarios: [congestion, node_failure, fluctuation, mixed]
+reward:
+  lam: 0.0
