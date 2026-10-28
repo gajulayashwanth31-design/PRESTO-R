@@ -1,0 +1,126 @@
+[
+  {
+    "label": "Table 1.1 Evaluation Criteria And Evidence Map",
+    "page": 6
+  },
+  {
+    "label": "Table 2.1 Project Goals And Measures",
+    "page": 8
+  },
+  {
+    "label": "Table 3.1 Core Simulation Parameters",
+    "page": 13
+  },
+  {
+    "label": "Table 3.2 Scenario Configuration",
+    "page": 14
+  },
+  {
+    "label": "Table 3.3 Software Dependencies",
+    "page": 16
+  },
+  {
+    "label": "Table 4.1 Design Alternatives And Trade-Offs",
+    "page": 25
+  },
+  {
+    "label": "Table 5.1 Phase Schedule And Completion Status",
+    "page": 28
+  },
+  {
+    "label": "Table 7.1 Observed Computational Assets And Unrecorded Cost Items",
+    "page": 38
+  },
+  {
+    "label": "Table 7.2 GRU Test Classification And Sample Counts",
+    "page": 41
+  },
+  {
+    "label": "Table 7.3 GRU Test Ranking Calibration And Lead Time",
+    "page": 41
+  },
+  {
+    "label": "Table 7.4 LOGREG Test Classification And Sample Counts",
+    "page": 42
+  },
+  {
+    "label": "Table 7.5 LOGREG Test Ranking Calibration And Lead Time",
+    "page": 42
+  },
+  {
+    "label": "Table 7.6 GRU H=3 Classification And Sample Counts",
+    "page": 43
+  },
+  {
+    "label": "Table 7.7 GRU H=3 Ranking Calibration And Lead Time",
+    "page": 44
+  },
+  {
+    "label": "Table 7.8 GRU H=10 Classification And Sample Counts",
+    "page": 44
+  },
+  {
+    "label": "Table 7.9 GRU H=10 Ranking Calibration And Lead Time",
+    "page": 45
+  },
+  {
+    "label": "Table 7.10 NSFNET Delivery Delay And Recovery (Mean +/- Standard Deviation Across Training Seeds)",
+    "page": 46
+  },
+  {
+    "label": "Table 7.11 NSFNET Switching Proactive Response And Unnecessary Switches (Mean +/- Standard Deviation Across Training Seeds)",
+    "page": 47
+  },
+  {
+    "label": "Table 7.12 Paired Wilcoxon Results With Holm Correction",
+    "page": 51
+  },
+  {
+    "label": "Table 7.13 Paired-Test Signed Effect Sizes",
+    "page": 52
+  },
+  {
+    "label": "Table 7.14 Available Ablation Cells",
+    "page": 54
+  },
+  {
+    "label": "Table 7.15 Lambda Sweep PDR And Switches",
+    "page": 54
+  },
+  {
+    "label": "Table 7.16 Lambda Sweep Unnecessary Switching And Recovery",
+    "page": 55
+  },
+  {
+    "label": "Table 7.17 Lambda Sweep Proactive Rate",
+    "page": 55
+  },
+  {
+    "label": "Table 7.18 Horizon Sweep PDR And Switching",
+    "page": 56
+  },
+  {
+    "label": "Table 7.19 Horizon Sweep Proactivity Recovery And Predictor F1",
+    "page": 56
+  },
+  {
+    "label": "Table 7.20 RGG Delivery Delay And Recovery",
+    "page": 57
+  },
+  {
+    "label": "Table 7.21 RGG Switching Proactivity And Unnecessary Switching",
+    "page": 58
+  },
+  {
+    "label": "Table 7.22 Evaluation-Only Robustness Results",
+    "page": 61
+  },
+  {
+    "label": "Table 7.23 Predeclared Success Criteria",
+    "page": 64
+  },
+  {
+    "label": "Table 7.24 Success-Criteria And Summary Aggregation Difference",
+    "page": 64
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Fig. 4.1 PRESTO-R System Architecture",
+    "page": 20
+  },
+  {
+    "label": "Fig. 4.2 NSFNET Topology Used In The Main Evaluation",
+    "page": 20
+  },
+  {
+    "label": "Fig. 6.1 Representative Training Curves",
+    "page": 35
+  },
+  {
+    "label": "Fig. 6.2 Held-Out Event Trace Demonstration",
+    "page": 36
+  },
+  {
+    "label": "Fig. 7.1 Held-Out Predictor Quality",
+    "page": 40
+  },
+  {
+    "label": "Fig. 7.2 Learned And Oracle Link-Risk Trace",
+    "page": 41
+  },
+  {
+    "label": "Fig. 7.3 NSFNET Main Results",
+    "page": 46
+  },
+  {
+    "label": "Fig. 7.4 Mixed-Scenario Switch-Penalty Trade-Off",
+    "page": 54
+  },
+  {
+    "label": "Fig. 7.5 Prediction-Horizon Sensitivity",
+    "page": 56
+  },
+  {
+    "label": "Fig. 7.6 RGG Main Results",
+    "page": 57
+  }
+]
